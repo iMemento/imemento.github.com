@@ -129,7 +129,7 @@ text-decoration: none;
 
 .paginator .current-page {
 color: white;
-background: #ff0000;
+background: #0000ff;
 }
 
 .paginator a:hover{
