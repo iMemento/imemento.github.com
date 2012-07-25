@@ -4,7 +4,11 @@ title: Linux下操纵CPU曲线绘制心形
 categories:
 - C&C++
 tags:
--  C语言 -Linux -CPU曲线 -CPU亲和性 -编程之美
+-  C语言 
+-  Linux 
+-  CPU曲线
+-  CPU亲和性
+-  编程之美
 
 ---
 不久之前看了「编程之美」，里面有在windows下操纵CPU绘制正弦曲线的示例程序。思路很简单，但是需要知道几个windows的API函数。
@@ -16,7 +20,7 @@ tags:
 绘制正弦曲线的程序思路很简单，在看过「编程之美」后，完全可以仿照写出Linux版本，只是引用的库和调用的API函数不通而已。书中没有双核的参考程序，要让特定的线程在特定的cpu上运行需要设置cpu亲和度，windows下可参考这篇博客[http://blog.csdn.net/wesweeky/article/details/6402564](http://blog.csdn.net/wesweeky/article/details/6402564)
 
 我本来想用经典的心形曲线X^2+(y-(x^2)^(1/3))^2=1来绘制，但是效果不是很好，所以干脆使用几个分段的二次函数。详细代码如下：
-{% highlight c++ %}
+{% highlight objc %}
 /*Programmed by Wang Zaijing 2011-08-01*/
 #include <stdio.h>
 #include <pthread.h>
@@ -198,14 +202,21 @@ int main()//主函数
 {% endhighlight %}
 
 总结几点：
+
 1.   Linux下的cpu亲和度
 CPU 亲和性（affinity） 就是进程要在某个给定的 CPU 上尽量长时间地运行而不被迁移到其他处理器的倾向性。Linux 内核进程调度器天生就具有被称为 软 CPU 亲和性（affinity） 的特性，这意味着进程通常不会在处理器之间频繁迁移，windows则不然，如果你的电脑是双核，你会看到两条cpu曲线近似相同，进程几乎被两个cpu均分。
 Linux下的cpu亲和度可以参考以下博文，讲的非常清楚
 [http://www.ibm.com/developerworks/cn/linux/l-affinity.html](http://www.ibm.com/developerworks/cn/linux/l-affinity.html)
+
 2.   终端编译出错：undefined reference to'pthread_reate' 加上-lpthread 如：gcc test.c –lpthread 。若使用IDE Code::Blocks 编译出错则要进行以下设置：
 Project -> Build options -> Linker settings -> Link libraries 里加上pthread
-3   Happy Birthday to「某*」.    This is just for you.
+
+3.   Happy Birthday to「某*」.    This is just for you.
+
 【参考文献】《编程之美》
+
 【参考博客】管理处理器的亲和性 [http://www.ibm.com/developerworks/cn/linux/l-affinity.html](http://www.ibm.com/developerworks/cn/linux/l-affinity.html)
+
 【参考博客】让CPU占用率曲线听你指挥[http://blog.csdn.net/wesweeky/article/details/6402564](http://blog.csdn.net/wesweeky/article/details/6402564)
+
 【参考博客】Linux下pthread的线程亲和性研究[http://blog.sina.com.cn/s/blog_6a1837e90100nrlj.html](http://blog.sina.com.cn/s/blog_6a1837e90100nrlj.html)
