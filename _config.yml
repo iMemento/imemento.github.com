@@ -1,4 +1,3 @@
-markdown: rdiscount
 permalink: /:year/:month/:title/
 url: http://imemento.github.com
 author: 王在京
