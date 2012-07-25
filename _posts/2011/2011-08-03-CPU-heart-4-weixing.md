@@ -17,7 +17,7 @@ tags:
 
 ![1](http://imemento.github.com/blogImages/20110803-1.png)
 
-绘制正弦曲线的程序思路很简单，在看过「编程之美」后，完全可以仿照写出Linux版本，只是引用的库和调用的API函数不通而已。书中没有双核的参考程序，要让特定的线程在特定的cpu上运行需要设置cpu亲和度，windows下可参考这篇博客[http://blog.csdn.net/wesweeky/article/details/6402564](http://blog.csdn.net/wesweeky/article/details/6402564)
+绘制正弦曲线的程序思路很简单，在看过「编程之美」后，完全可以仿照写出Linux版本，只是引用的库和调用的API函数不通而已。书中没有双核的参考程序，要让特定的线程在特定的cpu上运行需要设置cpu亲和度，windows下可参考这篇博客	[http://blog.csdn.net/wesweeky/article/details/6402564](http://blog.csdn.net/wesweeky/article/details/6402564)
 
 我本来想用经典的心形曲线X^2+(y-(x^2)^(1/3))^2=1来绘制，但是效果不是很好，所以干脆使用几个分段的二次函数。详细代码如下：
 {% highlight objc %}
@@ -215,8 +215,8 @@ Project -> Build options -> Linker settings -> Link libraries 里加上pthread
 	
 【参考文献】《编程之美》
 
-【参考博客】管理处理器的亲和性 [http://www.ibm.com/developerworks/cn/linux/l-affinity.html](http://www.ibm.com/developerworks/cn/linux/l-affinity.html)
+【参考博客】管理处理器的亲和性	[http://www.ibm.com/developerworks/cn/linux/l-affinity.html](http://www.ibm.com/developerworks/cn/linux/l-affinity.html)
 
-【参考博客】让CPU占用率曲线听你指挥 [http://blog.csdn.net/wesweeky/article/details/6402564](http://blog.csdn.net/wesweeky/article/details/6402564)
+【参考博客】让CPU占用率曲线听你指挥	[http://blog.csdn.net/wesweeky/article/details/6402564](http://blog.csdn.net/wesweeky/article/details/6402564)
 
-【参考博客】Linux下pthread的线程亲和性研究 [http://blog.sina.com.cn/s/blog_6a1837e90100nrlj.html](http://blog.sina.com.cn/s/blog_6a1837e90100nrlj.html)
+【参考博客】Linux下pthread的线程亲和性研究	[http://blog.sina.com.cn/s/blog_6a1837e90100nrlj.html](http://blog.sina.com.cn/s/blog_6a1837e90100nrlj.html)
