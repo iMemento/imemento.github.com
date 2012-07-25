@@ -217,6 +217,6 @@ Project -> Build options -> Linker settings -> Link libraries 里加上pthread
 
 【参考博客】管理处理器的亲和性 [http://www.ibm.com/developerworks/cn/linux/l-affinity.html](http://www.ibm.com/developerworks/cn/linux/l-affinity.html)
 
-【参考博客】让CPU占用率曲线听你指挥[http://blog.csdn.net/wesweeky/article/details/6402564](http://blog.csdn.net/wesweeky/article/details/6402564)
+【参考博客】让CPU占用率曲线听你指挥 [http://blog.csdn.net/wesweeky/article/details/6402564](http://blog.csdn.net/wesweeky/article/details/6402564)
 
-【参考博客】Linux下pthread的线程亲和性研究[http://blog.sina.com.cn/s/blog_6a1837e90100nrlj.html](http://blog.sina.com.cn/s/blog_6a1837e90100nrlj.html)
+【参考博客】Linux下pthread的线程亲和性研究 [http://blog.sina.com.cn/s/blog_6a1837e90100nrlj.html](http://blog.sina.com.cn/s/blog_6a1837e90100nrlj.html)
