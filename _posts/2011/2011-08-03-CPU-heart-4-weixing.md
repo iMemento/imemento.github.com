@@ -211,7 +211,7 @@ Linux下的cpu亲和度可以参考以下博文，讲的非常清楚
 2.   终端编译出错：undefined reference to'pthread_reate' 加上-lpthread 如：gcc test.c –lpthread 。若使用IDE Code::Blocks 编译出错则要进行以下设置：
 Project -> Build options -> Linker settings -> Link libraries 里加上pthread
 
-3.   Happy Birthday to「某*」.    This is just for you.
+3.   Happy Birthday to「某\*」.    This is just for you.
 	
 【参考文献】《编程之美》
 
