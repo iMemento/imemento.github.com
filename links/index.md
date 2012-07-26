@@ -3,8 +3,8 @@ title: links
 layout: page
 comments: yes
 ---
-####我的微博:  [http://www.weibo.com/hardcandylove](http://www.weibo.com/hardcandylove)    
-####我的豆瓣:  [http://www.douban.com/people/hardcandylove/](http://www.douban.com/people/hardcandylove/)       
+我的微博:  [http://www.weibo.com/hardcandylove](http://www.weibo.com/hardcandylove)    
+我的豆瓣:  [http://www.douban.com/people/hardcandylove/](http://www.douban.com/people/hardcandylove/)       
 
 ####最近读过的书
 
