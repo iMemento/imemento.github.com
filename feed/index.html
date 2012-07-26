@@ -1,16 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>{{ site.author }}</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1138">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
-  </style>
-</head>
-<body>
-<p class="p1">--- --- {{ site.time | date_to_xmlschema }} spencer.wong@hotmail.com {% for post in site.posts limit:10 %} {{ post.date | date_to_xmlschema }} {{ site.author }} {{ site.url }}{{ post.id }} {% endfor %}</p>
-</body>
-</html>
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+  <rss version="2.0"
+        xmlns:content="http://purl.org/rss/1.0/modules/content/"
+        xmlns:atom="http://www.w3.org/2005/Atom"
+  >
+  <channel>
+    <title>{{ site.author }}</title>
+    <link href="{{ site.url }}/feed/" rel="self" />
+    <link href="http://imemento.github.com" />
+    <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+    <webMaster>spencer.wong@hotmail.com</webMaster>
+    {% for post in site.posts limit:10 %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <link href="{{ site.url }}{{ post.url }}"/>
+      <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+      <author>{{ site.author }}</author>
+      <guid>{{ site.url }}{{ post.id }}</guid>
+      <content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
+
