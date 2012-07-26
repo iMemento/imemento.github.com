@@ -15,6 +15,7 @@ layout: page
   </style>
 </head>
 <body>
+<p class="p1">--- --- {{ site.time | date_to_xmlschema }} spencer.wong@hotmail.com {% for post in site.posts limit:10 %} {{ post.date | date_to_xmlschema }} {{ site.author }} {{ site.url }}{{ post.id }} {% endfor %}</p>
 <a href="http://www.zhuaxia.com/add_channel.php?url=http://imemento.github.com" target=_blank>
 <IMG style="MARGIN-BOTTOM: 3px" border=0 alt=抓虾 vspace=2 src="http://img.feedsky.com/images/icon_subshot01_zhuaxia.gif">
 </a>
