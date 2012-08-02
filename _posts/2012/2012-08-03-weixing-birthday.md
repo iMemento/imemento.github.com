@@ -8,7 +8,7 @@ tags:
 
 ---
 This is just 4 u! Happy Birthday！    
-![1](http://imemento.github.com/blogImages/20120803-2.png)                    
+![1](http://imemento.github.com/blogImages/20120803-2.JPG)                    
 											
 
 
