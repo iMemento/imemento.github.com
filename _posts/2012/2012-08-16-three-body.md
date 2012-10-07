@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 物理学的尽头是什么？——「三体」
+title: 物理学的尽头是什么？
 categories:
 - Books
 tags:
