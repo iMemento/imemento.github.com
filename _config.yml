@@ -1,5 +1,5 @@
 permalink: /:year/:month/:title/
-url: http://imemento.github.com
+url: http://peakcoder.com
 author: 王在京
 pygments: true
 paginate: 8
