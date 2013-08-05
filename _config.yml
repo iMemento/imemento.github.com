@@ -4,3 +4,6 @@ author: 王在京
 pygments: true
 paginate: 8
 
+safe: true
+lsi: false
+
