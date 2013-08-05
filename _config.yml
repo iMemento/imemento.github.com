@@ -1,9 +1,7 @@
-#permalink: /:year/:month/:title/
+markdown: rdiscount
+permalink: /:year/:month/:title/
 url: http://peakcoder.com
 author: 王在京
 pygments: true
 paginate: 8
-
-safe: true
-lsi: false
 
