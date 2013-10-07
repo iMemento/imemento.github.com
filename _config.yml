@@ -1,7 +1,7 @@
 markdown: rdiscount
 permalink: /:year/:month/:title/
 url: http://peakcoder.com
-author: 王在京
+author: 王在京同学
 pygments: true
 paginate: 8
 
