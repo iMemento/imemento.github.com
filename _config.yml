@@ -1,6 +1,6 @@
 markdown: rdiscount
 
-url: http://zaijing.coding.me
+url: http://peakcoder.com
 author: 王在京同学
 pygments: true
 gems: [jekyll-paginate]
