@@ -4,7 +4,7 @@ title: 生日快乐~那星~
 categories:
 - Life
 tags:
--  Life
+- Life
 
 ---
 This is just 4 u! Happy Birthday！    

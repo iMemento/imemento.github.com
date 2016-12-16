@@ -4,7 +4,7 @@ title: 写在2012-07-26凌晨
 categories:
 - Life
 tags:
--  Life
+- Life
 
 ---
 终于将博客搭好了，现在是2012年7月26日12点27分。

@@ -4,11 +4,11 @@ title: Linux下操纵CPU曲线绘制心形
 categories:
 - C&C++
 tags:
--  C语言 
--  Linux 
--  CPU曲线
--  CPU亲和性
--  编程之美
+- C语言 
+- Linux 
+- CPU曲线
+- CPU亲和性
+- 编程之美
 
 ---
 不久之前看了「编程之美」，里面有在windows下操纵CPU绘制正弦曲线的示例程序。思路很简单，但是需要知道几个windows的API函数。
