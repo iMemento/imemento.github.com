@@ -4,6 +4,6 @@ url: http://peakcoder.com
 author: 王在京同学
 pygments: true
 gems: [jekyll-paginate]
-paginate: 8
+paginate: 12
 paginate_path: "page:num"
 
