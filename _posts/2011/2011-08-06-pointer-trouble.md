@@ -4,7 +4,7 @@ title: 指针二三事
 categories:
 - C&C++
 tags:
-- C语 
+- C语言
 - 指针
 
 ---
