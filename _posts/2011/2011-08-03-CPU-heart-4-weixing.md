@@ -20,7 +20,7 @@ tags:
 绘制正弦曲线的程序思路很简单，在看过「编程之美」后，完全可以仿照写出Linux版本，只是引用的库和调用的API函数不通而已。书中没有双核的参考程序，要让特定的线程在特定的cpu上运行需要设置cpu亲和度，windows下可参考这篇博客	[http://blog.csdn.net/wesweeky/article/details/6402564](http://blog.csdn.net/wesweeky/article/details/6402564)
 
 我本来想用经典的心形曲线X^2+(y-(x^2)^(1/3))^2=1来绘制，但是效果不是很好，所以干脆使用几个分段的二次函数。详细代码如下：
-{% highlight objc %}
+{% highlight c %}
 /*Programmed by Wang Zaijing 2011-08-01*/
 #include <stdio.h>
 #include <pthread.h>
