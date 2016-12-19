@@ -1,4 +1,4 @@
-markdown: rdiscount
+markdown: redcarpet
 
 url: http://peakcoder.com
 author: 王在京同学
