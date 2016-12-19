@@ -2,7 +2,7 @@ markdown: rdiscount
 
 url: http://peakcoder.com
 author: 王在京同学
-pygments: true
+highlighter: pygments
 gems: [jekyll-paginate]
 paginate: 12
 paginate_path: "page:num"
