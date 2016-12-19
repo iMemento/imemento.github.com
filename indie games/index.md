@@ -15,7 +15,7 @@ comments: yes
 		img.iconimg {
 		width:80px;
 		height:80px;
-		border-radius:14px;
+		border-radius:10px;
 		}
 		div.apps {
 		overflow:hidden;
