@@ -16,6 +16,7 @@ comments: yes
 		width:80px;
 		height:80px;
 		border-radius:0px;
+		box-shadow: none;
 		}
 		div.apps {
 		overflow:hidden;
