@@ -10,5 +10,5 @@ comments: yes
 </a>
 
 我是王小兵                                      
-Email:Spencer.Wong@outlook.com      
+Email:zaijing@alu.hit.edu.cn      
 新浪微博:	[http://weibo.com/hardcandylove](http://weibo.com/hardcandylove)
