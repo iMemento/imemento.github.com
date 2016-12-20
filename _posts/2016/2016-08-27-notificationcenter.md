@@ -9,7 +9,7 @@ tags:
 ---
 2012年时候还在做iOS，OC里有个NotifationCenter蛮好用的，之后做Coscos2d也有这个，
 然Unity并没有这个，且Unity SendMessage的消息机制效率低下，而且inactive的物件收不到消息，还只能带一个参数，忒不好用。
-C#的Action和委托倒是好，但是公司项目里用多播注册事件的地方，很多人忘记取消注册，导致各种bug，我心酸。心想还是自己写个Notification吧。
+C#的Action和委托倒是好，但是公司项目里用多播注册事件的地方，很多人忘记取消注册，导致各种bug，我心酸。心想还是自己写个NotificationCenter吧。
 
 代码如下：
 
