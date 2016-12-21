@@ -12,6 +12,17 @@
 /*@import url(http://fonts.googleapis.com/css?family=Galdeano);*/
 /*@import url(http://fonts.googleapis.com/css?family=Electrolize);*/
 /*@import url(http://fonts.googleapis.com/css?family=Cuprum);*/
+
+/* latin */
+@font-face {
+  font-family: 'Electrolize';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Electrolize'), local('Electrolize-Regular'), url(peakcoder.com/fonts/googlefont.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
 body{font-size:14px;word-spacing:1px;
 	margin-left:auto;
 margin-right:auto;
@@ -44,7 +55,7 @@ blockquote p{margin:0;padding:.5em 0;}
 .listing-seperator{font-weight:bold;}
 .meta{text-align:right;font-size:12px;}
 header{padding:.5em 0;border-bottom: 1px solid #cccccc;}
-nav{font-family:'Arial Narrow',sans-serif;font-size:1.1em;text-transform:uppercase;float:left;margin-left:-12em;width:9em;text-align:right;}
+nav{font-family:'Electrolize',sans-serif;font-size:1.1em;text-transform:uppercase;float:left;margin-left:-12em;width:9em;text-align:right;}
 nav a{display:block;padding:.7em 1em;color:#000000;}
 nav a:hover{background-color:#005fef;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}
 .post{padding:.5em 0em;}
