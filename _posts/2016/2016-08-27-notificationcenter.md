@@ -171,5 +171,69 @@ public class NotificationCenter
 }
 {% endhighlight %}
 
+接口：
+{% highlight csharp %}
+public void AddObserver(object observer, string notification, NotificationHandler0 handler)
+public void AddObserver(object observer, string notification, NotificatonHandlerN handler)
+public void RemoveObserver(object observer, string notification)
+public void PostNotification(string notification, params object[] args)
+{% endhighlight %}
 
+需要注意的是，observer的handler可以无参数或者有参数，
+handler在observer里声明的时候，如果有参数，形参类型必须是object[]，用的时候做类型转换，
+调用PostNotification()的时候需注意参数数目和顺序。
+
+具体实例如下：
+
+{% highlight csharp %}
+
+using UnityEngine;
+using System.Collections;
+public class TestView: MonoBehaviour
+{
+    void Start()
+    {
+        NotificationCenter.DefaultCenter.AddObserver(this, "HideTestViewNotify", HideUI);
+        NotificationCenter.DefaultCenter.AddObserver(this, "ModelChangeNotify", RefreshUI);
+    }
+
+    void OnDestroy()
+    {
+        NotificationCenter.DefaultCenter.RemoveObserver(this, "HideTestViewNotify");
+        NotificationCenter.DefaultCenter.RemoveObserver(this, "ModelChangeNotify");
+    }
+
+    void HideUI()
+    {
+        // to hdie ui
+    }
+
+    void RefreshUI(object[] data)
+    {
+        var model = data[0] as ModelDataStructure;
+
+        // do more thing..
+    }
+}
+
+
+public class ModelManager
+{
+    void OnModelDataChanged(ModelDataStructure data)
+    {
+        NotificationCenter.DefaultCenter.PostNotification("ModelChangeNotify", data);
+    }
+
+    void DoSomethingToHideUI()
+    {
+        NotificationCenter.DefaultCenter.PostNotification("HideTestViewNotify");
+    }
+}
+
+public class ModelDataStructure
+{
+
+}
+
+{% endhighlight %}
 --EOF--						
