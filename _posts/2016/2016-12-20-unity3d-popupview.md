@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NGUI多个「弹出框」同时出现UI错乱解决方案
+title: 解决NGUI同时有多个弹出界面时UI错乱
 categories:
 - Unity3d
 tags:
