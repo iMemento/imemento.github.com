@@ -54,7 +54,7 @@ ADPCM需要解压，但比Vorbis轻量。
 
 播放频率低中型长度的使用 Compressed In Memory 和 Vorbis. 用ADPCM可能还是会太占用RAM，反正不经常用，不会很耗CPU.
 
-总结
+<font color=DeepPink size=4>总结</font>
 
 build 版本前check 下 Audio Clip Import Settings. 
 
