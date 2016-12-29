@@ -32,18 +32,20 @@ Decompress On Load – Audio Clip 无压缩存储在RAM里. 需要最多的RAM�
 <font color=DeepPink size=4>Music and/or Ambient Sounds</font>
 
 音乐、BGM、环境声音一般比较大，存到RAM里很占内存，我们肯定不选 Decompress On Load， 至少要压缩过放到RAM里。  
-所以有两种选择  
-1.Load Type: Streaming Compression Format: Vorbis. 这个组合是最不占用内存的，但是耗CPU和磁盘I/O.  
-2.Load Type: Compressed In Memory Compression Format: Vorbis. 跟第一种的区别是把I/O占用换成一部份内存占用了。  
-你可以调整 Quality 来降低大小，100%最高，一般推荐70%.
 
-空间换时间，代价就是这个比较耗CPU，可以在profiler里看下。
+所以有两种选择  
+
+1.Load Type: Streaming Compression Format: Vorbis. 这个组合是最不占用内存的，但是耗CPU和磁盘I/O. 
+
+2.Load Type: Compressed In Memory Compression Format: Vorbis. 跟第一种的区别是把I/O占用换成一部份内存占用了。  
+
+你可以调整 Quality 来降低大小，100%最高，一般推荐70%.空间换时间，代价就是这个比较耗CPU，可以在profiler里看下。
 
 <font color=DeepPink size=4>Sound Effects</font>
 
 Sounds effects 一般为中短型. 播放频率要么很多，要么很少。
 
-播放频率高而且很短的使用 Decompress On Load，Compression 格式 使用PCM 或者 ADPCM . 选择PCM就不用解压了，音频很短，也会load很快.
+播放频率高而且很短的使用 Decompress On Load，Compression 格式 使用PCM 或者 ADPCM. 选择PCM就不用解压了，音频很短，也会load很快.
 ADPCM需要解压，但比Vorbis轻量。
 
 播放频率高中型长度的使用 Compressed In Memory 和 ADPCM. ADPCM 差不多比PCM小3.5倍，解压比Vorbis快的多。
