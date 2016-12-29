@@ -40,9 +40,12 @@ The Risk: 有些模型在场景里显示的很小，但是贴图用的是高分�
 <font color=DeepPink size=4>Format</font>  
 
 除了「Advanced」有四种格式  
-·Compressed – GPU 付出一点点换来贴图大瘦身，Compressed 会为你的目标平台选择一种最合适的压缩算法。  
+·Compressed – GPU 付出一点点换来贴图大瘦身，Compressed 会为你的目标平台选择一种最合适的压缩算法.  
+
 ·16 bits – 无压缩 16 bit，适用于色彩少的。  
+
 ·Truecolor – 无压缩 32 bit 真彩色. 看着爽, 但一张2048x2048 17M.  
+
 ·Crunched – 用支持GPU压缩格式的方式压缩了一遍，然后再用CPU能够处理的格式再压缩一遍，下载Asset bundle的贴图比较适用。
 
 <font color=DeepPink>建议就是除非有什么特殊目的直接用Compressed.</font>
