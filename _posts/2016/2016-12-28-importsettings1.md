@@ -19,7 +19,7 @@ Texture Import Settings
 
 有三件事情需要注意
 
-####Texture Type
+<font color=LightPink size=3>Texture Type</font>
 
 Texture Type 主要是用来告诉Unity这张贴图是用来做什么的，所有的选项除了「Advanced」都会调整贴图的内部设置而达到各自最佳的目的。
 贴图的「Texture」是一种简单的diffuse类型，
@@ -27,7 +27,8 @@ Texture Type 主要是用来告诉Unity这张贴图是用来做什么的，所�
 
 The risk: 设置了错误的贴图类型，一开始可能没有察觉，就会导致性能损失。有些类型是必须设置的，因为shader需要这种类型才能工作(比如用作bump mapping的贴图必须设置为「Normal map」类型)。
 
-####Size  
+<font color=LightPink size=3>Size</font> 
+ 
 贴图的大小和压缩格式
 
 这些设置会决定你的贴图怎样在ram里存储，有多大。这里是Max size 而不是 size，因为你可是在Quality Settings里设置所有贴图的分辨率。
@@ -36,7 +37,8 @@ The risk: 设置了错误的贴图类型，一开始可能没有察觉，就会�
 
 The Risk: 有些模型在场景里显示的很小，但是贴图用的是高分辨率的。你能通过scene -> Mipmaps 筛选出这些物件（变红的就是过大分辨率的贴图）。
 
-####Format  
+<font color=LightPink size=3>Format</font>  
+
 除了「Advanced」有四种格式  
 Compressed – GPU 付出一点点换来贴图大瘦身。  
 Compressed 会为你的目标平台选择一种最合适的压缩算法。  
