@@ -35,13 +35,13 @@ tags:
 参考[链接](https://yssays.wordpress.com/2011/12/27/android-ndk-stack-tool/)，但并没有任何有价值的信息。
 
 SIGSEGV之前有可能还会遇到说GL找不到上下文的报错。
-{% highlight objc %}
+{% highlight no-highlight %}
 call to OpenGL ES API with no current context (logged once per thread)
 {% endhighlight %}
 
 一开始以为Unity开了<font color=DeepPink>Multithreaded Rendering</font>，导致crash。
 关掉了之后，确实不crash了，但是屏幕全粉了，要么材质掉了，要么shader跪了，开始报下面错：
-{% highlight objc %}
+{% highlight no-highlight %}
 -------- GLSL link failed, no info log provided.
 {% endhighlight %}
 
