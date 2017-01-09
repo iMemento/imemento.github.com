@@ -8,7 +8,7 @@ tags:
 
 ---
 项目一切都是OK的，接入某渠道SDK后，打开app 就 crash。人啊，这一辈子注定要遇到几个 'SIGSEGV'，摊手。
-{% highlight objc %}
+{% highlight c %}
 01-05 18:48:12.124: A/libc(727): Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 776 (UnityMain)
 01-05 18:48:12.124: E/libEGL(727): call to OpenGL ES API with no current context (logged once per thread)
 01-05 18:48:12.234: A/DEBUG(533): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
