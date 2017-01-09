@@ -8,7 +8,7 @@ tags:
 
 ---
 项目一切都是OK的，接入某渠道SDK后，打开app 就 crash。人啊，这一辈子注定要遇到几个 'SIGSEGV'，摊手。
-{% highlight c %}
+```
 01-05 18:48:12.124: A/libc(727): Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 776 (UnityMain)
 01-05 18:48:12.124: E/libEGL(727): call to OpenGL ES API with no current context (logged once per thread)
 01-05 18:48:12.234: A/DEBUG(533): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
@@ -29,7 +29,7 @@ tags:
 01-05 18:48:12.254: A/DEBUG(533):     #04 pc 00509e58  /data/app/com.kongzhong.c1.uc-1/lib/arm/libunity.so
 01-05 18:48:12.254: A/DEBUG(533):     #05 pc 0050cc00  /data/app/com.kongzhong.c1.uc-1/lib/arm/libunity.so
 01-05 18:48:12.254: A/DEBUG(533):     #06 pc 003f3441  /data/app/com.kongzhong.c1.uc-1/oat/arm/base.odex (offset 0x21f000)
-{% endhighlight %}
+```
 
 毫无头绪，看backtarce，挂在unity的C++代码里，鬼知道是什么，当然可以用<font color=DeepPink size=4>ndk-stack tool</font>来看具体的堆栈信息，如何使用
 参考[链接](https://yssays.wordpress.com/2011/12/27/android-ndk-stack-tool/)，但并没有任何有价值的信息。
