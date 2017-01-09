@@ -47,7 +47,7 @@ call to OpenGL ES API with no current context (logged once per thread)
 
 一番google之后，在Unity 坛子里名叫haruki_tachihara的网友(貌似霓虹国友人)解决了我的问题，很简单。   
 <font color=DeepPink>it was resolved by loading the game scene after the empty scene.</font>   
-竟然添加一个空场景中转一下就好了，而且多线程打开也没问题了，真是神了，摸不着头脑，现在想想应该是渠道sdk在splash界面就初始化，把UnityMain进程挂起导致的，
+竟然添加一个空场景中转一下就好了，而且多线程打开也没问题了，就这样所有问题都好了，也不crash了。现在想想大概是渠道sdk在splash界面就初始化，把UnityMain进程挂起导致的，
 现在国内渠道为了让接入的游戏打开就先显示自己的logo，也是操碎了心。
 
 --EOF--						
