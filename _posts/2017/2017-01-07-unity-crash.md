@@ -40,14 +40,15 @@ call to OpenGL ES API with no current context (logged once per thread)
 {% endhighlight %}
 
 一开始以为Unity开了<font color=DeepPink>Multithreaded Rendering</font>，导致crash。
-关掉了之后，确实不crash了，但是屏幕全粉了，要么材质掉了，要么shader跪了，开始报下面错：
+关掉了之后，确实不crash了，但是屏幕全粉了，心想要么材质掉了，要么shader跪了，开始报下面错：
 {% highlight no-highlight %}
 -------- GLSL link failed, no info log provided.
 {% endhighlight %}
 
-一番google之后，在Unity 坛子里名叫haruki_tachihara的网友(貌似霓虹国友人)解决了我的问题，很简单。   
+一番google之后，在Unity 坛子里名叫haruki_tachihara的网友(貌似霓虹国友人)解决了我的问题，很简单   
 <font color=DeepPink>it was resolved by loading the game scene after the empty scene.</font>   
-竟然添加一个空场景中转一下就好了，而且多线程打开也没问题了，就这样所有问题都好了，也不crash了。现在想想大概是渠道sdk在splash界面就初始化，把UnityMain进程挂起导致的，
+竟然添加一个空场景中转一下就好了，而且多线程打开也没问题了，就这样所有问题都好了，也不crash了。现在想想大概是渠道sdk在splash界面就初始化，
+把UnityMain进程挂起导致的。
 现在国内渠道为了让接入的游戏打开就先显示自己的logo，也是操碎了心。
 
 --EOF--						
