@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unity3d Android crash error 'Fatal signal 11 (SIGSEGV), code 1'
+title: U3d crash on android 'Fatal signal 11 (SIGSEGV), code 1'
 categories:
 - Unity3d
 tags:
