@@ -1,6 +1,6 @@
 ---
 layout: post
-title: U3d 'Fatal signal 11 (SIGSEGV), code 1'
+title: Unity3d 'Fatal signal 11 (SIGSEGV), code 1'
 categories:
 - Unity3d
 tags:
