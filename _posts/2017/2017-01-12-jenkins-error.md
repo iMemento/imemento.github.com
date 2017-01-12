@@ -15,8 +15,8 @@ tags:
 但是我去[系统管理->进入节点->节点管理]里看了下，都是好的。
 
 没办法只能用重启大法了   
-<font color=DeepPink>jenkins_url//safeRestart</font>等待现有构建完成后重启。    
-<font color=DeepPink>jenkins_url//restart</font>直接重启。    
+<font color=DeepPink>jenkinsurl/safeRestart</font>等待现有构建完成后重启。    
+<font color=DeepPink>jenkinsurl/restart</font>直接重启。    
 重启之后就好了。
 
 嗯，重启大法好。
