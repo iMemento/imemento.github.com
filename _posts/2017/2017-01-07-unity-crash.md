@@ -31,7 +31,7 @@ tags:
 01-05 18:48:12.254: A/DEBUG(533):     #06 pc 003f3441  /data/app/com.kongzhong.c1.uc-1/oat/arm/base.odex (offset 0x21f000)
 {% endhighlight %}
 
-毫无头绪，看backtarce，挂在unity的C++代码里，鬼知道是什么，当然可以用<font color=DeepPink>ndk-stack tool</font>来看具体的堆栈信息，如何使用
+毫无头绪，看backtarce，挂在unity的C++代码里，鬼知道是什么，当然可以用<span style="color:DeepPink">ndk-stack tool</span>来看具体的堆栈信息，如何使用
 参考[链接](https://yssays.wordpress.com/2011/12/27/android-ndk-stack-tool/)，但并没有任何有价值的信息。
 
 SIGSEGV之前有可能还会遇到说GL找不到上下文的报错。
@@ -39,14 +39,14 @@ SIGSEGV之前有可能还会遇到说GL找不到上下文的报错。
 call to OpenGL ES API with no current context (logged once per thread)
 {% endhighlight %}
 
-一开始以为Unity开了<font color=DeepPink>Multithreaded Rendering</font>，导致crash。
+一开始以为Unity开了<span style="color:DeepPink">Multithreaded Rendering</span>，导致crash。
 关掉了之后，确实不crash了，但是屏幕全粉了，心想要么材质掉了，要么shader跪了，开始报下面错：
 {% highlight no-highlight %}
 -------- GLSL link failed, no info log provided.
 {% endhighlight %}
 
 一番google之后，在Unity 坛子里名叫haruki_tachihara的网友(貌似霓虹国友人)解决了我的问题，很简单   
-<font color=DeepPink>it was resolved by loading the game scene after the empty scene.</font>   
+<span style="color:DeepPink">it was resolved by loading the game scene after the empty scene.</span>   
 竟然添加一个空场景中转一下就好了，而且多线程打开也没问题了，就这样所有问题都好了，也不crash了。现在想想大概是渠道sdk在splash界面就初始化，
 把UnityMain进程挂起导致的。
 现在国内渠道为了让接入的游戏打开就先显示自己的logo，也是操碎了心。

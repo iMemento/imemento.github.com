@@ -19,7 +19,7 @@ Texture Import Settings
 
 有三件事情需要注意
 
-<font color=DeepPink size=4>Texture Type</font>
+<span style="color:DeepPink; font-size: 14pt">Texture Type</span>
 
 Texture Type 主要是用来告诉Unity这张贴图是用来做什么的，所有的选项除了「Advanced」都会调整贴图的内部设置而达到各自最佳的目的。
 贴图的「Texture」是一种简单的diffuse类型，
@@ -27,7 +27,7 @@ Texture Type 主要是用来告诉Unity这张贴图是用来做什么的，所�
 
 The risk: 设置了错误的贴图类型，一开始可能没有察觉，就会导致性能损失。有些类型是必须设置的，因为shader需要这种类型才能工作(比如用作bump mapping的贴图必须设置为「Normal map」类型)。
 
-<font color=DeepPink size=4>Size</font> 
+<span style="color:DeepPink; font-size: 14pt">Size</span> 
 
 贴图的大小和压缩格式
 
@@ -37,19 +37,19 @@ The risk: 设置了错误的贴图类型，一开始可能没有察觉，就会�
 
 The Risk: 有些模型在场景里显示的很小，但是贴图用的是高分辨率的。你能通过scene -> Mipmaps 筛选出这些物件（变红的就是过大分辨率的贴图）。
 
-<font color=DeepPink size=4>Format</font>  
+<span style="color:DeepPink; font-size: 14pt">Format</span>  
 
 除了「Advanced」有四种格式  
 
-<font color=DeepPink>·Compressed</font> – GPU 付出一点点换来贴图大瘦身，Compressed 会为你的目标平台选择一种最合适的压缩算法.  
+<span style="color:DeepPink">·Compressed</span> – GPU 付出一点点换来贴图大瘦身，Compressed 会为你的目标平台选择一种最合适的压缩算法.  
 
-<font color=DeepPink>·16 bits</font> – 无压缩 16 bit，适用于色彩少的。  
+<span style="color:DeepPink">·16 bits</span> – 无压缩 16 bit，适用于色彩少的。  
 
-<font color=DeepPink>·Truecolor</font> – 无压缩 32 bit 真彩色. 看着爽, 但一张2048x2048 17M.  
+<span style="color:DeepPink">·Truecolor</span> – 无压缩 32 bit 真彩色. 看着爽, 但一张2048x2048 17M.  
 
-<font color=DeepPink>·Crunched</font> – 用支持GPU压缩格式的方式压缩了一遍，然后再用CPU能够处理的格式再压缩一遍，下载Asset bundle的贴图比较适用。
+<span style="color:DeepPink">·Crunched</span> – 用支持GPU压缩格式的方式压缩了一遍，然后再用CPU能够处理的格式再压缩一遍，下载Asset bundle的贴图比较适用。
 
-<font color=DeepPink>建议就是除非有什么特殊目的直接用Compressed.</font>
+<span style="color:DeepPink">建议就是除非有什么特殊目的直接用Compressed.</span>
 
 
 格式「advanced」还没说，设置为「advanced」能够设置更多的压缩格式，

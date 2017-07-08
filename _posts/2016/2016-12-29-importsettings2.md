@@ -29,7 +29,7 @@ Streaming – Audio Clip 存储在 persistent memory (hard drive, flash drive et
 Decompress On Load – Audio Clip 无压缩存储在RAM里. 需要最多的RAM，但是不耗CPU
 到底选哪个视情况而定.
 
-<font color=DeepPink size=4>Music and/or Ambient Sounds</font>
+<span style="color:DeepPink; font-size: 14pt">Music and/or Ambient Sounds</span>
 
 音乐、BGM、环境声音一般比较大，存到RAM里很占内存，我们肯定不选 Decompress On Load， 至少要压缩过放到RAM里。  
 
@@ -41,7 +41,7 @@ Decompress On Load – Audio Clip 无压缩存储在RAM里. 需要最多的RAM�
 
 你可以调整 Quality 来降低大小，100%最高，一般推荐70%.空间换时间，代价就是这个比较耗CPU，可以在profiler里看下。
 
-<font color=DeepPink size=4>Sound Effects</font>
+<span style="color:DeepPink; font-size: 14pt">Sound Effects</span>
 
 Sounds effects 一般为中短型. 播放频率要么很多，要么很少。
 
@@ -54,7 +54,7 @@ ADPCM需要解压，但比Vorbis轻量。
 
 播放频率低中型长度的使用 Compressed In Memory 和 Vorbis. 用ADPCM可能还是会太占用RAM，反正不经常用，不会很耗CPU.
 
-<font color=DeepPink size=4>总结</font>
+<span style="color:DeepPink; font-size: 14pt">总结</span>
 
 build 版本前check 下 Audio Clip Import Settings. 
 
