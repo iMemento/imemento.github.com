@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xcode error 'MapFileParser.sh Permission denied - not set as executable'
+title: Xcode error 'MapFileParser.sh Permission denied'
 categories:
 - Unity3d
 tags:
