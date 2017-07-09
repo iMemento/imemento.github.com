@@ -18,5 +18,8 @@ iOS平台不允许JIT，会通过Full AOT直接编译为ARM汇编代码。但在
 #### Ran out of trampolines of type 2 
 如果你界面操作频繁，你可以通过添加额外的参数-aot "nimt-trampolines=512" 来解决。
 这里的默认值为128.
+
+
+以上参数在Build settings的 <span style="color:DeepPink">AOT Compilation Options</span> 里添加
 
 --EOF--						
