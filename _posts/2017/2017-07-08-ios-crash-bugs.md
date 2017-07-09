@@ -26,8 +26,7 @@ IL是.NET框架中中间语言（Intermediate Language）的缩写。使用.NET�
 目前不能使用反射中的Property.SetInfo给非空类型赋值。
 
 #### 3.值类型作为Dictionary的Key时会有问题.        
-实际上实现了IEquatable<T>的类型都会有此问题，因为Dictionary的默认构造函数会使用EqualityComparer<TKey>.Default作为比较器，而对于实现了IEquatable<T>的类型，EqualityComparer<TKey>.Default要通过反射来实例化一个实现了IEqualityComparer<TKey>的类（可以参考EqualityComparer<T>的实现）。 解决方案是自己实现一个IEqualityComparer<TKey>，然后使用Dictionary<TKey, TValue>(IEqualityComparer<TKey>)构造器创建Dictionary实例。
-之前[GC优化篇](http://peakcoder.com/unity3d/2016/12/16/unity3d-gc.html)有提过。
+实际上实现了IEquatable<T>的类型都会有此问题，因为Dictionary的默认构造函数会使用EqualityComparer<TKey>.Default作为比较器，而对于实现了IEquatable<T>的类型，EqualityComparer<TKey>.Default要通过反射来实例化一个实现了IEqualityComparer<TKey>的类（可以参考EqualityComparer<T>的实现）。 解决方案是自己实现一个IEqualityComparer<TKey>，然后使用Dictionary<TKey, TValue>(IEqualityComparer<TKey>)构造器创建Dictionary实例。之前GC优化篇有提过。
 
 #### 4.由于不允许动态生成代码，不允许使用System.Reflection.Emit，不允许动态创建类型。
 由于不允许使用System.Reflection.Emit，无法使用DLR及基于DLR的任何语言。
