@@ -22,11 +22,11 @@ IL是.NET框架中中间语言（Intermediate Language）的缩写。使用.NET�
 #### 1.不支持泛型虚方法。         
 因为对于泛型代码，Mono通过静态分析以确定要实例化的类型并生成代码，但静态分析无法确定运行时实际调用的方法（C++也因此不支持虚模版函数）。
 
-#### 2.不支持对泛型类的P/Invoke。
+#### 2.不支持对泛型类的P/Invoke。       
 
-#### 3.目前不能使用反射中的Property.SetInfo给非空类型赋值。
+#### 3.目前不能使用反射中的Property.SetInfo给非空类型赋值。      
 
-#### 4.值类型作为Dictionary的Key时会有问题.        
+#### 4.值类型作为Dictionary的Key时会有问题.         
 实际上实现了IEquatable<T>的类型都会有此问题，因为Dictionary的默认构造函数会使用EqualityComparer<TKey>.Default作为比较器，而对于实现了IEquatable<T>的类型，EqualityComparer<TKey>.Default要通过反射来实例化一个实现了IEqualityComparer<TKey>的类（可以参考EqualityComparer<T>的实现）。 解决方案是自己实现一个IEqualityComparer<TKey>，然后使用Dictionary<TKey, TValue>(IEqualityComparer<TKey>)构造器创建Dictionary实例。之前GC优化篇有提过。
 
 #### 5.由于不允许动态生成代码，不允许使用System.Reflection.Emit，不允许动态创建类型。
