@@ -7,7 +7,7 @@ tags:
 - Unity3d
 
 ---
-最近做航母飞机的预瞄，用的'World Space'的Canvas绘制在3d空间，但是不响应触摸事件，Canvas的'Sort Order'设置无效，事件永远被'Screen Space - Camera'的Canvas截获，之前的UGUI版本'GraphicRaycaster'脚本有显示的sort order设置，现在也没有了。
+最近做航母飞机的预瞄，用的World Space的Canvas绘制在3d空间，但是不响应触摸事件，Canvas的Sort Order设置无效，事件永远被Screen Space Camera的Canvas截获，之前的UGUI版本GraphicRaycaster脚本有显示的sort order设置，现在也没有了。
 
 去bitbucket看了EventSystem源码发现比较顺序为    
 1.GraphicRaycaster不同            
@@ -68,7 +68,7 @@ private static int RaycastComparer(RaycastResult lhs, RaycastResult rhs)
 
 {% endhighlight %}
 
-World Space Canvas 的 eventCamera 是'MainCamera',他的
+World Space Canvas 的 eventCamera 是MainCamera,他的
 depth一定是要小于UICamera的，基本没救了啊，只能把UI Canvas设置为Overlay来解决了，再做一个GraphicRaycaster子类设置sortOrderPriority来解决。
 
 {% highlight csharp %}
