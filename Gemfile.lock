@@ -1,7 +1,8 @@
+gem 'jekyll-paginate', group: :jekyll_plugins
+gem 'redcarpet'
+gem 'pygments.rb'
+
 GEM
-  gem 'jekyll-paginate', group: :jekyll_plugins
-  gem 'redcarpet'
-  gem 'pygments.rb'
   remote: https://rubygems.org/
   specs:
     jekyll-paginate
