@@ -1,4 +1,5 @@
 GEM
+  gem 'jekyll-paginate', group: :jekyll_plugins
   remote: https://rubygems.org/
   specs:
     jekyll-paginate
