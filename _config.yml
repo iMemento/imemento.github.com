@@ -2,6 +2,7 @@ markdown: redcarpet
 
 url: http://peakcoder.com
 author: 王在京同学
+plugins: [jekyll-paginate]
 highlighter: pygments.rb
 paginate: 12
 paginate_path: "page:num"
