@@ -15,7 +15,7 @@ tags:
 刚开始我想尝试在windows下绘制心形，不过没能做到，原因是CPU曲线是CPU利用率和时间构成的函数的关系，心形是一个封闭图形，不可能是一个函数，所以至少需要两条CPU曲线才能绘制（这需要你的机器为双核或多核或者多个CPU），然而windows的任务管理器，我没能找到将两条CPU曲线绘制在同一图表下的方法，所以没能成功。
 不过ubuntu下的任务管理器可以，而且还可以设置CPU曲线的颜色。以下是我在ubuntu下任务管理器的截图，我把两条CPU曲线都设置成了红色，设置CPU曲线的刷新速率为2s。  
 
-![1](http://imemento.github.com/blogImages/20110803-1.png)
+![1](/blogImages/20110803-1.png)
 
 绘制正弦曲线的程序思路很简单，在看过「编程之美」后，完全可以仿照写出Linux版本，只是引用的库和调用的API函数不通而已。书中没有双核的参考程序，要让特定的线程在特定的cpu上运行需要设置cpu亲和度，windows下可参考这篇博客	[http://blog.csdn.net/wesweeky/article/details/6402564](http://blog.csdn.net/wesweeky/article/details/6402564)
 
