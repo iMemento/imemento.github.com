@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 接入 Google Play 几个坑 
+title: Unity Google Play Plugin 的坑 
 categories:
 - Unity3d
 tags:
