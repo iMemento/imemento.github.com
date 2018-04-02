@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WWW 'unsupported url' error on iOS 
+title: www 'unsupported url' error on iOS 
 categories:
 - Unity3d
 tags:
