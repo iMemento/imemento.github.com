@@ -51,5 +51,8 @@ comments: yes
     <li class ="icon">
         <a title="鲁迅杂文小说集" href="https://itunes.apple.com/cn/app/id1375316899?mt=8"><img class = "iconimg" alt="鲁迅杂文小说集" src="/blogImages/luxun.png" width="80"></a>
     </li>
+	<li class ="icon">
+        <a title="乱步短篇集" href="https://itunes.apple.com/cn/app/id1209529114"><img class = "iconimg" alt="乱步短篇集" src="/blogImages/luanbu.png" width="80"></a>
+    </li>
     </ul>
 </div>
