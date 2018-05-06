@@ -15,8 +15,8 @@ comments: yes
 		img.iconimg {
 		width:80px;
 		height:80px;
-		border-radius:0px;
-		box-shadow: none;
+		border-radius:15px;
+		box-shadow: 0px 0px 5px #888888;
 		}
 		div.apps {
 		overflow:hidden;
@@ -27,18 +27,18 @@ comments: yes
 <div class = "apps">
     <ul>
     <li class = "icon">
-        <a title="Puppy Touch (iPhone / iPad)" href="https://www.douban.com/app/26785727/"><img class = "iconimg" alt="Puppy Touch (iPhone / iPad)" src="https://img3.doubanio.com/mpic/s29045700.jpg" width="80"></a>
+        <a title="Puppy Touch (iPhone / iPad)" href="https://itunes.apple.com/cn/app/id1104761965/"><img class = "iconimg" alt="Puppy Touch (iPhone / iPad)" src="/blogImages/puppytouch.png" width="80"></a>
     </li>
     <li class = "icon">
-        <a title="全蛋流水线 (iPhone / iPad)" href="https://www.douban.com/app/26574309/"><img class = "iconimg" alt="全蛋流水线 (iPhone / iPad)" src="https://img3.doubanio.com/mpic/s28258181.jpg" width="80"></a>
+        <a title="全蛋流水线 (iPhone / iPad)" href="https://itunes.apple.com/cn/app/id1018629225"><img class = "iconimg" alt="全蛋流水线 (iPhone / iPad)" src="/blogImages/petpipeline.png" width="80"></a>
     </li>
     <li class ="icon">
-        <a title="后宫Run (iPhone / iPad)" href="https://www.douban.com/app/26574310/"><img class = "iconimg" alt="后宫Run (iPhone / iPad)" src="https://img3.doubanio.com/lpic/s28747746.jpg" width="80"></a>
+        <a title="后宫Run (iPhone / iPad)" href="https://itunes.apple.com/cn/app/id994161640"><img class = "iconimg" alt="后宫Run (iPhone / iPad)" src="/blogImages/zhenhuanrun.png" width="80"></a>
     </li>
     </ul>
 </div>
 
-**应用**
+**读书应用**
 
 <div class = "apps">
     <ul>
