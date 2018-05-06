@@ -37,3 +37,19 @@ comments: yes
     </li>
     </ul>
 </div>
+
+**应用**
+
+<div class = "apps">
+    <ul>
+    <li class = "icon">
+        <a title="人生必读的100本书" href="https://itunes.apple.com/cn/app/id1358312595?mt=8"><img class = "iconimg" alt="人生必读的100本书" src="/blogImages/books100.png" width="80"></a>
+    </li>
+    <li class = "icon">
+        <a title="胡适文集" href="https://itunes.apple.com/cn/app/id1375322263?mt=8"><img class = "iconimg" alt="胡适文集" src="/blogImages/hushi.png" width="80"></a>
+    </li>
+    <li class ="icon">
+        <a title="鲁迅杂文小说集" href="https://itunes.apple.com/cn/app/id1375316899?mt=8"><img class = "iconimg" alt="鲁迅杂文小说集" src="/blogImages/luxun.png" width="80"></a>
+    </li>
+    </ul>
+</div>
