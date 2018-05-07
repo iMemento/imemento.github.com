@@ -4,7 +4,7 @@
 
 var disqus_config = function () 
 {
-    this.page.url = '{{ page.url }}'; 
+    this.page.url = 'https://peakcoder.com' + '{{ page.url }}'; 
     this.page.identifier = '{{ page.title }}';
 };
 
