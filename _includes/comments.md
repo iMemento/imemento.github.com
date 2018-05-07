@@ -4,8 +4,8 @@
 
 var disqus_config = function () 
 {
-    this.page.url = {{ page.url }}; 
-    this.page.identifier = {{ page.title }};;
+    this.page.url = '{{ page.url }}'; 
+    this.page.identifier = '{{ page.title }}';
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
