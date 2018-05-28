@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unity Tips #1
+title: Unity Tips (#1)
 categories:
 - Unity3d Tips
 tags:
