@@ -83,13 +83,15 @@ public class ComponentReferenceManager
 ```
 
 在 `UIWidget` 的 Awake 里 或者你怀疑的其他脚本里添加调用
+
 ```
-\#if UNITY_EDITOR
-    ComponentReferenceManager.Instance.AddRef(this);
-\#endif
+	#if UNITY_EDITOR
+		ComponentReferenceManager.Instance.AddRef(this);
+	#endif
 ```
 
-编辑器脚本
+编辑器脚本          
+
 ```
 public partial class ReportEditor
 {
