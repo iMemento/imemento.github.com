@@ -9,7 +9,7 @@
     <title>{{ site.author }}</title>
     <link href="{{ site.url }}/feed/" rel="self" />
     <link href="http://imemento.github.com" />
-    <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+    <lastBuildDate>{{ "now" | date_to_xmlschema }}</lastBuildDate>
     <webMaster>spencer.wong@hotmail.com</webMaster>
     {% for post in site.posts limit:10 %}
     <item>
