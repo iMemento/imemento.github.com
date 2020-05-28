@@ -2,7 +2,7 @@ markdown: kramdown
 
 url: http://peakcoder.com
 author: 王在京同学
-highlighter: pygments.rb
+highlighter: rouge.rb
 paginate: 12
 paginate_path: "page:num"
 timezone: Asia/Shanghai
