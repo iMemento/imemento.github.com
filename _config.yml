@@ -1,4 +1,4 @@
-markdown: redcarpet
+markdown: kramdown
 
 url: http://peakcoder.com
 author: 王在京同学
