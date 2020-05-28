@@ -9,7 +9,7 @@ tags:
 ---
 
 当我们使用 `Unity Profiler` 查看内存时，经常有些贴图等资源的引用只有一个 `ManagedStaticReferences()` 引用，怎么都卸载不掉。
-使用 `Memory Profiler` 也查找不到谁引用的。现在终于找到方法，开心，分享给大家。
+使用 `Memory Profiler` 也查找不到谁引用的。现在终于找到方法，开心，来分享给大家。
 
 具体思路：
 
