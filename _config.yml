@@ -5,6 +5,6 @@ highlighter: rouge
 paginate: 12
 paginate_path: "page:num"
 timezone: Asia/Shanghai
-encoding: utf-8
+encoding: "utf-8"
 
 theme: jekyll-theme-cayman
