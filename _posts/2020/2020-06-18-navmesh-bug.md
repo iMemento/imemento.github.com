@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NavMeshAgent 'SetDestination' error
+title: NavMeshAgent SetDestination Error
 categories:
 - Unity3d
 tags:
