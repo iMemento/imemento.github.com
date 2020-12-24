@@ -27,6 +27,9 @@ comments: yes
 <div class = "apps">
     <ul>
     <li class = "icon">
+        <a title="晴书" href="https://itunes.apple.com/cn/app/id1543087372/"><img class = "iconimg" alt="晴书" src="/blogImages/qingshu.png" width="80"></a>
+    </li>
+    <li class = "icon">
         <a title="Puppy Touch (iPhone / iPad)" href="https://itunes.apple.com/cn/app/id1104761965/"><img class = "iconimg" alt="Puppy Touch (iPhone / iPad)" src="/blogImages/puppytouch.png" width="80"></a>
     </li>
     <li class = "icon">
