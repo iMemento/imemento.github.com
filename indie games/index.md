@@ -21,6 +21,7 @@ comments: yes
 		div.apps {
 		overflow:hidden;
 		white-space:nowrap;
+        margin-left: 30px;
 		}
 		</style>
 </head>
