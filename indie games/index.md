@@ -11,6 +11,7 @@ comments: yes
 		list-style:none;
 		float:left;
 		width: 90px;
+        margin-left: 15px;
 		}
 		img.iconimg {
 		width:80px;
@@ -21,7 +22,7 @@ comments: yes
 		div.apps {
 		overflow:hidden;
 		white-space:nowrap;
-        margin-left: 30px;
+        margin-left: 5px;
 		}
 		</style>
 </head>
